@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i=3;
+    int j=0;
+    int v[]={1,2,3};
+    int vv[]={3,2,1};
+    int vvv[2];
+    while(j<3){
+        vvv[j]=v[j]+vv[j];
+        j++;
+    }
+    while(j>0){
+        printf("\n%i\n",vvv[j]);
+        j--;
+    }
+    return 0;
+}
