@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float v[10];
+    float max=0, min=0, auxmax=0, auxmin=0, aux=0, m=0, med=0, abx=0;
+    for(int i=0;i<10;i++){
+        printf("\nDigite a Temperatura do dia:\n");
+        scanf("%f",&v[i]);
+        m=m+v[i];
+    }
+    for(int i=0;i<10;i++){
+        max=v[i];
+        min=v[i];
+        if(max>auxmax){
+                auxmax=max;
+        }
+        if(min<auxmin){
+                auxmin=min;
+        }
+    }
+    med=m/10;
+    printf("\n A media de temperatura e: %f \n",med);
+    for(int i=0;i<10;i++){
+        if(v[i]<med){
+            printf("\nA temperatura %f ficou abaixo da media: \n",v[i]);
+        }
+    }
+    printf("\n A menor temperatura e: %f \n\n A maior temperatura e: %f \n",auxmin,auxmax);
+    for(int i=0;i<10;i++){
+        if(v[i]<0){
+            printf("\n %f esta abaixo de zero graus celcius!\n",v[i]);
+        }
+    }
+    return 0;
+}
