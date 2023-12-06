@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+int soma(){
+    int n1, n2;
+    printf("\n Digite o primeiro numero:\n");
+    scanf("%i",&n1);
+    printf("\n Digite o segundo numero:\n");
+    scanf("%i",&n2);
+    printf("\n A soma e: %i",n1+n2);
+}
+int sub(){
+    int n1, n2;
+    printf("\n Digite o primeiro numero:\n");
+    scanf("%i",&n1);
+    printf("\n Digite o segundo numero:\n");
+    scanf("%i",&n2);
+    printf("\n A subtracao e: %i",n1-n2);
+}
+int mult(){
+    int n1, n2;
+    printf("\n Digite o primeiro numero:\n");
+    scanf("%i",&n1);
+    printf("\n Digite o segundo numero:\n");
+    scanf("%i",&n2);
+    printf("\n A multiplicacao e: %i",n1*n2);
+}
+int divi(){
+    int n1, n2;
+    printf("\n Digite o primeiro numero:\n");
+    scanf("%i",&n1);
+    printf("\n Digite o segundo numero:\n");
+    scanf("%i",&n2);
+    printf("\n A divisao e: %i",n1/n2);
+}
+int main()
+{
+    int n;
+    printf("\n Escolha a operacao: 1 - soma // 2 - sub // 3 - multi // 4 - div");
+    scanf("%i",&n);
+    switch(n)
+    {
+        case 1:
+            soma();
+        break;
+        case 2:
+            sub();
+        break;
+        case 3:
+            mult();
+        break;
+        case 4:
+            divi();
+        break;
+        default:
+            break;
+    }
+    return 0;
+}
