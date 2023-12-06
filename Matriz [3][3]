@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float N[2][3];
+    float M[3];
+    for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                printf("\n Escreva a nota: \n");
+                scanf("%f",&N[i][j]);
+            }
+    }
+    for(int i=0;i<2;i++){
+            for(int j=0;j<3;j++){
+                M[i]=N[i][j]+N[i][j+1]+N[i][j+2];
+            }
+    }
+    for(int i=0;i<2;i++){
+            for(int j=0;j<3;j++){
+                printf("%f",M[i]);
+                printf("%f",N[i][j]);
+            }
+    }
+    return 0;
+}
