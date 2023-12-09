@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+void inteiro();
+void inteiro(){
+    int n;
+    printf("\nEscreva o numero:\n");
+    scanf("%i",&n);
+    if(n%2=0){
+        printf("\nEh multiplo de dois!");
+        else
+            printf("\nNao eh multiplo de dois!");
+    }
+}
+int main()
+{
+    printf("Hello world!\n");
+    inteiro();
+    return 0;
+}
