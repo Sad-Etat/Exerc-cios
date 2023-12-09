@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void troca();
+void troca(int a,int b){
+    float temp;
+    temp= *a;
+    a=b;
+    *b=temp;
+}
+int main(){
+
+    int n1,n2;
+
+    printf("\nDigite o valor 1: ");
+    scanf("%i",&n1);
+    printf("\nDigite o valor 2: ");
+    scanf("%i",&n2);
+    printf("\nValores antes da troca:\n");
+    printf("\nValor 1: %i\n",n1);
+    printf("\nValor 2: %i\n",n2);
+
+    troca(&n1,&n2);
+
+    printf("\nValores depois da troca:\n");
+    printf("Valor 1: %i\n",n1);
+    printf("Valor 2: %i\n",n2);
+
+    return 0;
+}
