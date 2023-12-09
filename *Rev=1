@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int inte=10;
+    float real=1.5;
+    char crt='A';
+    int *ptrInte;
+    float *ptrreal;
+    char *ptrcrt;
+
+    ptrInte=&inte;
+    ptrreal=&real;
+    ptrcrt=&crt;
+
+    printf("\nValor antes da modificacao:\n");
+    printf("\nInteiro: %d\n",inte);
+    printf("\nReal: %f\n",real);
+    printf("\nCaractere: %c\n", crt);
+
+    *ptrInte=20;
+    *ptrreal=2.71;
+    *ptrcrt='E';
+
+    printf("\nValor depois da modificacao:\n");
+    printf("\nInteiro: %d\n",inte);
+    printf("\nReal: %f\n",real);
+    printf("\nCaractere: %c\n",crt);
+
+    return 0;
+}
